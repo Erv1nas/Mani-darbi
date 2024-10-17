@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Personu informacijas - Tabula</title>
+    <link rel="stylesheet" href="dizains.css">
+  </head>
+  <body>
+    <h1>Izvade</h1>
+    <table>
+      <tr>
+        <th>Vards</th>
+        <td id="fname"></td>
+      </tr>
+      <tr>
+        <th>Uzvards</th>
+        <td id="lname"></td>
+      </tr>
+      <tr>
+        <th>Dzimums</th>
+        <td id="gender"></td>
+      </tr>
+      <tr>
+        <th>Dzimasnas diena</th>
+        <td id="bday"></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td id="email"></td>
+      </tr>
+    </table>
+    
+    <script>
+      // Iegūstiet vērtības no iepriekšējās web lapas un izvadās jaunās web lapas tabulā
+      document.getElementById("fname").innerHTML = sessionStorage.getItem("fname");
+      document.getElementById("lname").innerHTML = sessionStorage.getItem("lname");
+      document.getElementById("gender").innerHTML = sessionStorage.getItem("gender");
+      document.getElementById("bday").innerHTML = sessionStorage.getItem("bday");
+      document.getElementById("email").innerHTML = sessionStorage.getItem("email");
+    </script>
+  </body>
+</html>

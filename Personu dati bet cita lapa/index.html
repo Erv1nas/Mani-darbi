@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Personu informacija</title>
+    <link rel="stylesheet" href="dizains.css">
+  </head>
+  <body>
+    <h1>Ievadiet savu info:</h1>
+    <form>
+      <label for="fname">Vards:</label>
+      <input type="text" id="fname" name="fname" required>
+      
+      <label for="lname">Uzvards:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="gender">Dzimums:</label>
+      <select id="gender" name="gender">
+        <option value="">--Ludzu izvelaties savu dzimumu--</option>
+        <option value="male">Virietis</option>
+        <option value="female">Sieviete</option>
+        <option value="female">Pusaudzis</option>
+        <option value="other">Cits</option>
+      </select>
+      
+      <label for="bday">Dzimsanas diena:</label>
+      <input type="date" id="bday" name="bday" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <center>
+      <button type="button" onclick="submitForm()">Iesniegt</button>
+      <button type="button" onclick="alert('Šodiensa stundu mērķis bija izveidot Personas informācijas nelielu anketu kur aizpildot un uz spiežot pogu *Iesniegt* atveras jauna web lapa kur izvadās personas iensiegitie dati tabulā')">Informācija</button>
+      </center>
+    </form>
+    
+    <script src="funkcija.js"></script>
+  </body>
+</html>
