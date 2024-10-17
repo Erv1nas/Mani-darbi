@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW lapa</title>
+    <link rel="stylesheet" href="dizains.css">
+  </head>
+    <body>
+     <!--Mēģināju extra izveidot ;) -->
+      <script>
+      function setView(view) {
+        if (view === "dators") {
+          document.body.style.width = "1900px";
+        } else if (view === "telefons") {
+          document.body.style.width = "375px";
+        }
+      }
+      const viewBtns = document.createElement("div");
+      viewBtns.innerHTML = `
+        <button onclick="setView('dators')">Dators</button>
+        <button onclick="setView('telefons')">Telefons</button>
+      `;
+      document.body.appendChild(viewBtns);
+      </script>
+      <header>         
+        <center>
+            <td><img class="animate" src="logo.jpg"></td>
+            <h1>Par BMW</h1>
+            <h4>Bayerische Motoren Werke AG, saīsināti kā BMW, ir Vācijas daudznacionāls luksusa transportlīdzekļu un motociklu ražotājs, kura galvenā mītne atrodas Minhenē, Bavārijā, Vācijā. Korporācija tika dibināta 1916. gadā kā lidmašīnu dzinēju ražotājs, ko tā ražoja no 1917. līdz 1918. gadam un atkal no 1933. līdz 1945. gadam. Automašīnas tiek tirgotas ar zīmoliem BMW, Mini un Rolls-Royce, un motocikli tiek tirgoti ar zīmolu BMW Motorrad. 2017. gadā BMW bija pasaulē četrpadsmitais lielākais mehānisko transportlīdzekļu ražotājs, saražojot 2 279 503 transportlīdzekļus. Uzņēmumam ir ievērojama motosporta vēsture, īpaši tūrisma automobiļu, sporta auto un Menas salas TT jomā.</h4>
+        </center>
+        <h2>Atrašanās vieta</h2>
+        <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69661.12661509571!2d24.03134432449427!3d56.93320542594017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eece050920f39f%3A0xcce7c34647cee7a4!2sBMW%20Latvija!5e0!3m2!1sen!2slv!4v1681465752867!5m2!1sen!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </center>
+
+        <center>
+            <h2>BMW modeļi</h2>
+        </center>
+        <table>
+			<tr>
+				<th>Modelis</th>
+				<th>Cena</th>
+				<th>Attēls</th>
+        <th>informācija</th>
+				<th></th>
+			</tr>
+
+			<tr>
+				<td>BMW 3 Series</td>
+				<td>€40,750</td>
+				<td><img src="bmw 3 series.jpg" alt="BMW 3 Series"></td>
+				<td><button onclick="window.open('https://www.bmw.lv/lv/all-models/3seriesoverview.html')">Vairāk informācija par BMW 3 series</button></td>
+			</tr>
+
+			<tr>
+				<td>BMW 5 Series</td>
+				<td>€54,200</td>
+				<td><img src="BMW 5 Series.jpg" alt="BMW 5 Series"></td>
+				<td><button onclick="window.open('https://www.bmw.co.uk/en/all-models/5-series.html')">Vairāk informācija par BMW 5 series</button></td>
+			</tr>
+
+			<tr>
+				<td>BMW X3</td>
+					<td>€43,000</td>
+					<td><img src="BMW x3.jpg" alt="BMW X3"></td>
+					<td><button onclick="window.open('https://www.auto-abc.lv/BMW-X3')">Vairāk informācija par BMW X3</button></td>
+				</tr>
+
+				<tr>
+					<td>BMW i8</td>
+					<td>€135,700</td>
+					<td><img src="i8.jpg" alt="BMW i8"></td>
+					<td><button onclick="window.open('https://www.bmw.co.uk/en/topics/discover/bmw-i8.html')">Vairāk informācija par i8</button></td>
+				</tr>
+
+        <tr>
+					<td>BMW M4
+            Competition
+          </td>
+					<td>€103,478</td>
+					<td><img src="m4.jpg" alt="BMW M4 Competition"></td>
+					<td><button onclick="window.open('https://www.bmw.lv/lv/all-models/mparskats/m4-coupe/2022/bmw-4-serijas-coupe-m-automobilu-parskats.html')">Vairāk informācija par M4 Competition</button></td>
+				</tr>
+
+        <td>BMW iX</td>
+        <td>€77,300</td>
+        <td><img src="ix.jpg" alt="BMW IX"></td>
+        <td><button onclick="window.open('https://www.bmw.lv/lv/all-models/bmw-i/bmw-ix/2021/BMW-ix-tehniskie-dati.html#tab-0')">Vairāk informācija par iX</button></td>
+      </tr>
+
+			</table>
+            <button onclick="document.getElementById('hidden-element').style.display = 'block'">Parādīt manu sapņu auto</button>
+            <div id="hidden-element" style="display:none;">
+        <tr>
+					<td><img src="m5 competition.jpg" alt="BMW X5 competition"><center><td>BMW M5 Competition</td></center></td>
+					<td><button onclick="window.open('https://www.topgear.com/car-reviews/bmw/m5-competition')">Vairāk informācija par BMW M5 competition</button></td>
+				</tr>
+            </div>
+
+            <center>
+                <h1>Pieteikties lai apskatītu jūsu BMW</h1>
+            </center>
+            <form>
+              <label for="fname">Vards:</label>
+              <input type="text" id="fname" name="fname" required>
+              
+              <label for="lname">Uzvards:</label>
+              <input type="text" id="lname" name="lname" required>
+        
+              <label for="gender">Dzimums:</label>
+              <select id="gender" name="gender">
+                <option value="">--Ludzu izvelaties savu dzimumu--</option>
+                <option value="male">Virietis</option>
+                <option value="female">Sieviete</option>
+                <option value="female">Pusaudzis</option>
+                <option value="other">Cits</option>
+              </select>
+              
+              <label for="car">Jūsu izvēlētais BMW modelis:</label>
+                <select id="car" name="car" required>
+                  <option value="">--Izvēlaties šeit--</option>
+                  <option value="BMW 3 Series">BMW 3 Series</option>
+                  <option value="BMW 5 Series">BMW 5 Series</option>
+                  <option value="BMW X3">BMW X3</option>
+                  <option value="BMW i8">BMW i8</option>
+                  <option value="BMW M5">BMW M5 Competition</option>
+                  <option value="BMW M4">BMW M4 Competition</option>
+                  <option value="BMW IX">BMW iX</option>
+                </select>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Numurs:</label>
+              <input type="phone" id="phone" name="phone" required>
+              
+                <button type="button" onclick="submitForm()">Iesniegt</button>
+              </form>   
+
+            <center>
+                <h1>Kontakti</h1>
+            </center>
+            <p1>Sazinieties ar mums, izmantojot šādas kontaktinformācijas:</p1>
+            <ul>
+                <li>Adrese: Petuelring 130, 80788 Minhenē, Vācijā</li>
+                <li>Tālrunis: +49 89 125016001</li>
+                <li>Epasts: info@bmw.com</li>
+            </ul>
+            <div class="popup" onclick="myFunction()"><h3>Par šo web lapu!</h3>
+                <span class="popuptext" id="myPopup">Šis darbs tika veidots 14.04.2023 autors ir Ervīns Jēkabsons un skolotājs ir Mareks Mateša</span>
+              </div>
+              <script src="funkcija.js"></script>
+		  </body>
+		</html>
